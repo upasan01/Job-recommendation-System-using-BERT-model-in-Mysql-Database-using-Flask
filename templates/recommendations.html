@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Recommendations</title>
+</head>
+<body>
+    <h1>Profile Recommendations</h1>
+
+    <h2>Input Profile Description:</h2>
+    <p>{{ profile_description }}</p>
+
+    <h2>Recommended Profiles:</h2>
+    <ul>
+        {% for recommended_profile in recommended_profiles %}
+            <li>{{ recommended_profile }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="/">Go Back to Home</a></p>
+</body>
+</html>

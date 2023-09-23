@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Recommendation System</title>
+</head>
+<body>
+    <h1>Profile Recommendation System</h1>
+    
+    <h2>Upload a Profile Description</h2>
+    <form method="POST" action="/upload">
+        <label for="profile_name">Name:</label>
+        <input type="text" name="profile_name" required><br><br>
+        <label for="lawyer_type">Lawyer Type:</label>
+        <input type="text" name="lawyer_type" required><br><br>
+        
+        <label for="description">Description:</label>
+        <textarea name="description" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Upload Profile">
+    </form>
+
+    <h2>Get Profile Recommendations</h2>
+    <form method="POST" action="/recommend">
+        <label for="profile_description">Enter Profile Description:</label>
+        <textarea name="profile_description" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>
