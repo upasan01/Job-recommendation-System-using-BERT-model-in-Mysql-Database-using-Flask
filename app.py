@@ -4,7 +4,7 @@ import pandas as pd
 import torch
 from transformers import BertTokenizer, BertModel
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 # Database configuration
 db = mysql.connector.connect(
